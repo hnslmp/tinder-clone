@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5149502284D148F00B83E3E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5149501284D148F00B83E3E /* User.swift */; };
+		B5149504284D186100B83E3E /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5149503284D186100B83E3E /* CardViewModel.swift */; };
+		B555723C284E4FB1005109B2 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B555723B284E4FB1005109B2 /* CustomTextField.swift */; };
+		B555723E284E5A78005109B2 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B555723D284E5A78005109B2 /* AuthButton.swift */; };
+		B57824E7284A1FD00080349E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57824E6284A1FD00080349E /* AppDelegate.swift */; };
+		B57824E9284A1FD00080349E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57824E8284A1FD00080349E /* SceneDelegate.swift */; };
+		B57824EE284A1FD00080349E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57824EC284A1FD00080349E /* Main.storyboard */; };
+		B57824F0284A1FD00080349E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57824EF284A1FD00080349E /* Assets.xcassets */; };
+		B57824F3284A1FD00080349E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57824F1284A1FD00080349E /* LaunchScreen.storyboard */; };
+		B5782502284A20D20080349E /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5782501284A20D20080349E /* HomeController.swift */; };
+		B5782506284A22860080349E /* HomeNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5782505284A22860080349E /* HomeNavigationStackView.swift */; };
+		B5782508284A3BD10080349E /* BottomControlsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5782507284A3BD10080349E /* BottomControlsStackView.swift */; };
+		B578250A284A54640080349E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5782509284A54640080349E /* CardView.swift */; };
+		B57FB7B1284DB8AD0034E943 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57FB7B0284DB8AD0034E943 /* LoginController.swift */; };
+		B57FB7B3284DB8B80034E943 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57FB7B2284DB8B80034E943 /* RegistrationController.swift */; };
+		B598D35E2850519800256F13 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598D35D2850519800256F13 /* AuthenticationViewModel.swift */; };
+		B5A1842B28509972003AABFF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B5A1842A28509972003AABFF /* FirebaseAuth */; };
+		B5A1842D28509972003AABFF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B5A1842C28509972003AABFF /* FirebaseFirestore */; };
+		B5A1842F28509972003AABFF /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = B5A1842E28509972003AABFF /* FirebaseStorage */; };
+		B5A1843128509B99003AABFF /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A1843028509B99003AABFF /* AuthService.swift */; };
+		B5A1843328509BA3003AABFF /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A1843228509BA3003AABFF /* Service.swift */; };
+		B5D0275B2862D0350041E175 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D0275A2862D0350041E175 /* Extensions.swift */; };
+		B5D0275D2862D06A0041E175 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5D0275C2862D06A0041E175 /* GoogleService-Info.plist */; };
+		B5D11022285206A5009A713F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D11021285206A5009A713F /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B5149501284D148F00B83E3E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B5149503284D186100B83E3E /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardViewModel.swift; path = ../../../../../Documents/CardViewModel.swift; sourceTree = "<group>"; };
+		B555723B284E4FB1005109B2 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		B555723D284E5A78005109B2 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
+		B57824E3284A1FD00080349E /* tinder-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tinder-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B57824E6284A1FD00080349E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B57824E8284A1FD00080349E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B57824ED284A1FD00080349E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B57824EF284A1FD00080349E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B57824F2284A1FD00080349E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B57824F4284A1FD00080349E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5782501284A20D20080349E /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		B5782505284A22860080349E /* HomeNavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationStackView.swift; sourceTree = "<group>"; };
+		B5782507284A3BD10080349E /* BottomControlsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomControlsStackView.swift; sourceTree = "<group>"; };
+		B5782509284A54640080349E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		B57FB7B0284DB8AD0034E943 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		B57FB7B2284DB8B80034E943 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		B598D35D2850519800256F13 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		B5A1843028509B99003AABFF /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		B5A1843228509BA3003AABFF /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		B5D0275A2862D0350041E175 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B5D0275C2862D06A0041E175 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B5D11021285206A5009A713F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B57824E0284A1FD00080349E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A1842B28509972003AABFF /* FirebaseAuth in Frameworks */,
+				B5A1842D28509972003AABFF /* FirebaseFirestore in Frameworks */,
+				B5A1842F28509972003AABFF /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B57824DA284A1FD00080349E = {
+			isa = PBXGroup;
+			children = (
+				B57824E5284A1FD00080349E /* tinder-clone */,
+				B57824E4284A1FD00080349E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B57824E4284A1FD00080349E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B57824E3284A1FD00080349E /* tinder-clone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B57824E5284A1FD00080349E /* tinder-clone */ = {
+			isa = PBXGroup;
+			children = (
+				B5782500284A20980080349E /* Model */,
+				B57824FF284A20950080349E /* View */,
+				B57824FE284A20940080349E /* ViewModel */,
+				B57824FD284A20940080349E /* Controller */,
+				B57824FC284A20920080349E /* API */,
+				B57824FA284A20880080349E /* Utils */,
+				B57824E6284A1FD00080349E /* AppDelegate.swift */,
+				B57824E8284A1FD00080349E /* SceneDelegate.swift */,
+				B57824EC284A1FD00080349E /* Main.storyboard */,
+				B57824EF284A1FD00080349E /* Assets.xcassets */,
+				B57824F1284A1FD00080349E /* LaunchScreen.storyboard */,
+				B5D0275C2862D06A0041E175 /* GoogleService-Info.plist */,
+				B57824F4284A1FD00080349E /* Info.plist */,
+			);
+			path = "tinder-clone";
+			sourceTree = "<group>";
+		};
+		B57824FA284A20880080349E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B555723B284E4FB1005109B2 /* CustomTextField.swift */,
+				B555723D284E5A78005109B2 /* AuthButton.swift */,
+				B5D11021285206A5009A713F /* Constants.swift */,
+				B5D0275A2862D0350041E175 /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B57824FC284A20920080349E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B5A1843028509B99003AABFF /* AuthService.swift */,
+				B5A1843228509BA3003AABFF /* Service.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		B57824FD284A20940080349E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B57FB7AF284DB89E0034E943 /* Authentication */,
+				B5782501284A20D20080349E /* HomeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B57824FE284A20940080349E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B5149503284D186100B83E3E /* CardViewModel.swift */,
+				B598D35D2850519800256F13 /* AuthenticationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B57824FF284A20950080349E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5782505284A22860080349E /* HomeNavigationStackView.swift */,
+				B5782507284A3BD10080349E /* BottomControlsStackView.swift */,
+				B5782509284A54640080349E /* CardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5782500284A20980080349E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5149501284D148F00B83E3E /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B57FB7AF284DB89E0034E943 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				B57FB7B0284DB8AD0034E943 /* LoginController.swift */,
+				B57FB7B2284DB8B80034E943 /* RegistrationController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B57824E2284A1FD00080349E /* tinder-clone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B57824F7284A1FD00080349E /* Build configuration list for PBXNativeTarget "tinder-clone" */;
+			buildPhases = (
+				B57824DF284A1FD00080349E /* Sources */,
+				B57824E0284A1FD00080349E /* Frameworks */,
+				B57824E1284A1FD00080349E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tinder-clone";
+			packageProductDependencies = (
+				B5A1842A28509972003AABFF /* FirebaseAuth */,
+				B5A1842C28509972003AABFF /* FirebaseFirestore */,
+				B5A1842E28509972003AABFF /* FirebaseStorage */,
+			);
+			productName = "tinder-clone";
+			productReference = B57824E3284A1FD00080349E /* tinder-clone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B57824DB284A1FD00080349E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					B57824E2284A1FD00080349E = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = B57824DE284A1FD00080349E /* Build configuration list for PBXProject "tinder-clone" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B57824DA284A1FD00080349E;
+			packageReferences = (
+				B5A1842928509972003AABFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = B57824E4284A1FD00080349E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B57824E2284A1FD00080349E /* tinder-clone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B57824E1284A1FD00080349E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B57824F3284A1FD00080349E /* LaunchScreen.storyboard in Resources */,
+				B5D0275D2862D06A0041E175 /* GoogleService-Info.plist in Resources */,
+				B57824F0284A1FD00080349E /* Assets.xcassets in Resources */,
+				B57824EE284A1FD00080349E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B57824DF284A1FD00080349E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B598D35E2850519800256F13 /* AuthenticationViewModel.swift in Sources */,
+				B578250A284A54640080349E /* CardView.swift in Sources */,
+				B555723E284E5A78005109B2 /* AuthButton.swift in Sources */,
+				B5782508284A3BD10080349E /* BottomControlsStackView.swift in Sources */,
+				B57824E7284A1FD00080349E /* AppDelegate.swift in Sources */,
+				B57824E9284A1FD00080349E /* SceneDelegate.swift in Sources */,
+				B5149502284D148F00B83E3E /* User.swift in Sources */,
+				B5782506284A22860080349E /* HomeNavigationStackView.swift in Sources */,
+				B57FB7B3284DB8B80034E943 /* RegistrationController.swift in Sources */,
+				B5A1843328509BA3003AABFF /* Service.swift in Sources */,
+				B5782502284A20D20080349E /* HomeController.swift in Sources */,
+				B555723C284E4FB1005109B2 /* CustomTextField.swift in Sources */,
+				B5A1843128509B99003AABFF /* AuthService.swift in Sources */,
+				B5149504284D186100B83E3E /* CardViewModel.swift in Sources */,
+				B5D0275B2862D0350041E175 /* Extensions.swift in Sources */,
+				B57FB7B1284DB8AD0034E943 /* LoginController.swift in Sources */,
+				B5D11022285206A5009A713F /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B57824EC284A1FD00080349E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B57824ED284A1FD00080349E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B57824F1284A1FD00080349E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B57824F2284A1FD00080349E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B57824F5284A1FD00080349E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B57824F6284A1FD00080349E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B57824F8284A1FD00080349E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DUFZTPDQV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "tinder-clone/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hnslmp.tinder-clone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B57824F9284A1FD00080349E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DUFZTPDQV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "tinder-clone/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hnslmp.tinder-clone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B57824DE284A1FD00080349E /* Build configuration list for PBXProject "tinder-clone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57824F5284A1FD00080349E /* Debug */,
+				B57824F6284A1FD00080349E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B57824F7284A1FD00080349E /* Build configuration list for PBXNativeTarget "tinder-clone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57824F8284A1FD00080349E /* Debug */,
+				B57824F9284A1FD00080349E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B5A1842928509972003AABFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B5A1842A28509972003AABFF /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5A1842928509972003AABFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		B5A1842C28509972003AABFF /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5A1842928509972003AABFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		B5A1842E28509972003AABFF /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5A1842928509972003AABFF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B57824DB284A1FD00080349E /* Project object */;
+}
